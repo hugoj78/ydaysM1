@@ -1,0 +1,33 @@
+Client
+{
+  "name":"Leib",
+  "firstname":"Adrien",
+  "email":"Adrien3@test.fr",
+  "password":"hugoleplusbo",
+  "admin":true
+}
+
+Product
+{
+  "stock": 50,
+  "price": 9999,
+  "idmotherproduct":"5ed7dd6b056c2e2cbcd42126"
+}
+   
+
+
+Invoice
+{
+  "paid":true,
+  "products":[{"id": "5ed7dfa7056c2e2cbcd4212d", "price": 5, "qty": 5}],
+  "price":199
+}
+
+
+
+MotherProduct
+{
+  "name":"poire",
+  "path":"c://Users//terra//Desktop//ProjetIng//Poire.png",
+  "type":"fruit"
+}

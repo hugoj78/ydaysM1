@@ -1,0 +1,94 @@
+{
+  "Client":{
+        "lastname": {
+            "type": "String",
+        },
+        "firstname": {
+            "type": "String",
+        },
+        "email": {
+            "type": "string",
+            "required": true,
+            "unique": true,
+            "lowercase": true
+        },
+        "password":{
+            "type": "String",
+            "required": true,
+            "minlength": 4,
+            "maxlength": 128
+        },
+        "friendcode":{
+            "type":"string"
+        },
+        "admin": {
+            "type": "Boolean"
+        },
+        "create_date":{
+            "type":"Date"
+        },
+        "products":{
+            "type":["String"]
+        },
+        "invoices":{
+            "type":["String"]
+        }
+    },
+    "Invoice":{
+        "client": {
+            "type": "String",
+        },
+        "issue_date": {
+            "type": "Date",
+        },
+        "paid": {
+            "type": "Boolean"
+        },
+        "pay_date":{
+            "type": "Date"
+        },
+        "price":{
+            "type": "Number"
+        },
+        "products":[{ "_id": "String", "qty": "Number", "price":"Number" }]
+    },
+    "MotherProduct":{
+        "name": {
+            "type": "String"
+        },
+        "path": {
+            "type": "String"
+        },
+        "type": {
+            "type": "String"
+        },
+        "products": {
+            "type": ["String"]
+        }
+    },
+    "Product": {
+        "name": {
+            "type": "String"
+        },
+        "stock": {
+            "type": "Number"
+        },
+        "path": {
+            "type": "String"
+        },
+        "price":{
+            "type": "Number"
+        },
+        "create_date":{
+            "type": "Date"
+        },
+        "invoices": [{ "_id": "String", "qty": "Number", "price":"Number"}],
+        
+        "idmotherproduct":{
+            "type": "String"
+        },
+        "idvendeur":{
+            "type": "String"
+        }
+    }
+}
