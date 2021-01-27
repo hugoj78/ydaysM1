@@ -1,4 +1,4 @@
 module.exports = {
-  url: "mongodb://admin:passw0rd@ds263640.mlab.com:63640/projetspe"
-  
+  url: "mongodb+srv://admin:passw0rd@clusterydays.wnsbo.mongodb.net/projetspe?retryWrites=true&w=majority"
+
 }
