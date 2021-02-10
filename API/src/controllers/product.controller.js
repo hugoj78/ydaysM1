@@ -134,8 +134,6 @@ exports.create = (req, res) => {
                             message: err.message || "Some error occurred when finding motherproducts."
                         })
                     })
-                res.send(data);
-
             })
             .catch(err => {
                 res.status(500).send(
@@ -225,7 +223,7 @@ exports.updateById = (req, res) => {
 exports.updatePath = (req, res) => {
     Product.findByIdAndUpdate(req.params.id, req.body)
         .then(products => {
-            res.send(products);
+            //res.send(products);
         })
         .catch(err => {
             res.status(500).send({
